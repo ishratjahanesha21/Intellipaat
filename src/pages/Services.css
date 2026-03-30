@@ -1,0 +1,45 @@
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 3rem; }
+.service-card { padding: 2.5rem 2rem; cursor: pointer; border-radius: 2rem; }
+.service-icon { font-size: 2rem; margin-bottom: 1rem; }
+.service-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--lime-text); letter-spacing: 0.1em; margin-bottom: 1rem; transition: color 0.3s ease; }
+.service-title { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.75rem; line-height: 1.2; color: var(--text-primary); transition: color 0.3s ease; }
+.service-desc { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65; transition: color 0.3s ease; }
+.service-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1.5rem; }
+.service-expand-hint { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--lime-text); margin-top: 1.25rem; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.3s ease; }
+.service-expanded { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); animation: fadeInUp 0.3s ease; transition: border-color 0.3s ease; }
+.service-detail-text { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem; transition: color 0.3s ease; }
+.deliverables-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); margin-bottom: 0.75rem; transition: color 0.3s ease; }
+.deliverables-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.deliverable-item { font-size: 0.875rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.5rem; transition: color 0.3s ease; }
+.deliverable-check { color: var(--lime-text); font-size: 0.75rem; transition: color 0.3s ease; }
+
+/* PRICING STRIP */
+.pricing-strip {
+  padding: 3rem; display: grid;
+  grid-template-columns: 1fr 2fr auto; gap: 3rem;
+  align-items: center; border-radius: 2.5rem; margin-top: 1rem;
+}
+.pricing-title { font-size: 2rem; font-weight: 700; letter-spacing: -0.04em; line-height: 1.1; margin-top: 0.5rem; color: var(--text-primary); transition: color 0.3s ease; }
+.pricing-title em { font-style: italic; font-weight: 300; color: var(--text-secondary); }
+.pricing-tiers { display: flex; gap: 2rem; }
+.pricing-tier { min-width: 150px; }
+.tier-name { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); margin-bottom: 0.5rem; transition: color 0.3s ease; }
+.tier-price { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.04em; color: var(--lime-text); margin-bottom: 0.5rem; transition: color 0.3s ease; }
+.tier-price span { font-size: 0.85rem; color: var(--text-muted); font-weight: 400; letter-spacing: 0; }
+.tier-desc { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; transition: color 0.3s ease; }
+
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .pricing-strip { grid-template-columns: 1fr; }
+  .pricing-tiers { flex-wrap: wrap; }
+}
+@media (max-width: 640px) { .services-grid { grid-template-columns: 1fr; } }
+
+.service-icon-wrap {
+  width: 44px; height: 44px;
+  background: var(--lime-muted); border: 1px solid var(--lime-border);
+  border-radius: 1rem;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--lime-text); margin-bottom: 1.25rem;
+  transition: all 0.3s ease;
+}
