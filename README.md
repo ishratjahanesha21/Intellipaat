@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/preview.png" alt="Intellipaat — AI-Powered Agency Website" width="100%" style="border-radius:16px"/>
+  <img src="public/Preview.png" alt="Intellipaat — AI-Powered Agency Website" width="100%" style="border-radius:16px"/>
 </div>
 
 <br/>
